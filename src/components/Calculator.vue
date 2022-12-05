@@ -3,6 +3,15 @@
 		class="p-3"
 		style="max-width: 400px; margin: 50px auto; background: #234"
 	>
+		<div class="container d-flex flex-row justify-content-between">
+			<p class="text-white" style="cursor: pointer">Github</p>
+
+			<a
+				href="https://github.com/Maxino22/vue-calculator-app"
+				class="text-white"
+				><iconGithub />
+			</a>
+		</div>
 		<!-- calculator results -->
 		<div
 			class="w-full rounded m-1 p-3 text-sm-right lead font-weight-bold text-white bg-vue-dark"
@@ -27,6 +36,7 @@
 </template>
 
 <script setup>
+import IconGithub from './iconGithub.vue'
 import { ref } from 'vue'
 
 const calculatorValue = ref('')
